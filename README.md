@@ -11,7 +11,7 @@ This project was made for CS 354: Computer Graphics as the Final Project.
 
 The project can be seen live here: [https://emperorbob7.github.io/Fisiks/](https://emperorbob7.github.io/Fisiks/)
 ## Project Report
-Can be accessed in the "FISIKS Report.pdf" file.
+Can be accessed in the [FISIKS Report.pdf](https://github.com/EmperorBob7/Fisiks/blob/main/FISIKS%20Report.pdf) file.
 
 Report includes images, sources used, challenges we faced, the planning process, and explanations on some of the features.
 ## Features
