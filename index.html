@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="static/main.css" />
+    <title>WebGL - Fisiks</title>
+</head>
+
+<body>
+    <canvas id="glCanvas" class="card" tabindex="1">Your browser does not support HTML5 </canvas>
+    <div id="uiInputs">
+        <div class="input">
+            <label for="pressureInput">Pressure Multiplier</label>
+            <div>
+                <input type="range" min="0" max="2" value="0.2" step="0.1" id="pressureInput" />
+                <label id="pressureDisplay">0.2</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="densityInput">Target Density</label>
+            <div>
+                <input type="range" min="0" max="100" value="2" step="1" id="densityInput" />
+                <label id="densityDisplay">2</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="bounceInput">Bounce Falloff</label>
+            <div>
+                <input type="range" min="0" max="2" value="0.4" step="0.1" id="bounceInput" />
+                <label id="bounceDisplay">0.5</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="xPosInput">X-Positive</label>
+            <div>
+                <input type="range" min="1" max="15" value="3" step="1" id="xPosInput" />
+                <label id="xPosDisplay">3</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="xNegInput">X-Negative</label>
+            <div>
+                <input type="range" min="1" max="15" value="3" step="1" id="xNegInput" />
+                <label id="xNegDisplay">3</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="yPosInput">Y-Positive</label>
+            <div>
+                <input type="range" min="1" max="15" value="3" step="1" id="yPosInput" />
+                <label id="yPosDisplay">3</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="yNegInput">Y-Negative</label>
+            <div>
+                <input type="range" min="1" max="15" value="3" step="1" id="yNegInput" />
+                <label id="yNegDisplay">3</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="zPosInput">Z-Positive</label>
+            <div>
+                <input type="range" min="1" max="15" value="3" step="1" id="zPosInput" />
+                <label id="zPosDisplay">3</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="zNegInput">Z-Negative</label>
+            <div>
+                <input type="range" min="1" max="15" value="3" step="1" id="zNegInput" />
+                <label id="zNegDisplay">3</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="meshSubdivisionInput">Mesh Subdivisions</label>
+            <div>
+                <input type="range" min="1" max="30" value="10" step="1" id="meshSubdivisionInput" />
+                <label id="meshSubdivisionDisplay">10</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="dragRadiusInput">Drag Radius</label>
+            <div>
+                <input type="range" min="1" max="10" value="1.5" step="0.1" id="dragRadiusInput" />
+                <label id="dragRadiusDisplay">1.5</label>
+            </div>
+        </div>
+        
+        <div class="input">
+            <label for="dragForceInput">Drag Force</label>
+            <div>
+                <input type="range" min="0" max="2" value="0.2" step="0.1" id="dragForceInput" />
+                <label id="dragForceDisplay">0.2</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="renderParticlesInput">Render Particles</label>
+            <input type="checkbox" id="renderParticlesInput" />
+        </div>
+
+        <div class="input">
+            <label for="renderMeshInput">Render Water Mesh</label>
+            <input type="checkbox" id="renderMeshInput" checked="true" />
+        </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>

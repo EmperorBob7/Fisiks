@@ -1,0 +1,66 @@
+:root {
+    --blk    : #333;
+    --d-gry  : #777;
+    --m-gry  : #aaa;
+    --l-gry  : #ddd;
+    --wht    : #fafafa;
+    --shadow : 0 5px 10px #000000aa;
+    --margins: 20px;
+    --padding: 10px; 
+    --radius : 5px;
+
+    --accent : #ff8200;
+    --good   : #373;
+    --warn   : #663;
+    --bad    : #733;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    border-radius: var(--radius);
+    margin: auto;
+    display: block;
+    width: 80vw;
+    height: 95vh;
+    border: 1px solid var(--m-gry);
+}
+
+.failed {
+    background-color: var(--bad);
+    color: var(--wht);
+}
+
+.passed {
+    background-color: var(--good);
+    color: var(--wht);
+}
+.manual {
+    background-color: var(--warn);
+    color: var(--wht);
+}
+
+#uiInputs {
+    width: 16vw;
+    padding: 1vw;
+    background-color: var(--blk);
+    color: var(--l-gry);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
